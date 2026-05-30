@@ -15,8 +15,6 @@ main = do
   putStrLn "Basic Haskell Calculator. Enter expressions like: 2 + 3 or 4.5 * 6. Type 'quit' to exit."
   loop
 
-loop :: IO ()
-loop = do
   putStr "> "
   line <- getLine
   case words line of
